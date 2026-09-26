@@ -47,7 +47,7 @@ struct ContentView: View {
             .navigationDestination(for: AppDestination.self) { destination in
                 switch destination {
                 case .localNotifications:
-                    Text("Local Notifications")
+                    TaskListView()
                 }
             }
             .alert("Page Info", isPresented: $showInfoAlert, presenting: selectedDescription) { _ in
